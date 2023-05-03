@@ -75,7 +75,6 @@ class TicTacToe
 
     static bool CheckWin(char[,] board, char player)
     {
-        // Check rows
         for (int row = 0; row < 3; row++)
         {
             if (board[row, 0] == player && board[row, 1] == player && board[row, 2] == player)
@@ -84,7 +83,7 @@ class TicTacToe
             }
         }
 
-        // Check columns
+
         for (int col = 0; col < 3; col++)
         {
             if (board[0, col] == player && board[1, col] == player && board[2, col] == player)
@@ -93,7 +92,6 @@ class TicTacToe
             }
         }
 
-        // Check diagonals
         if (board[0, 0] == player && board[1, 1] == player && board[2, 2] == player)
         {
             return true;
